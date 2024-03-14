@@ -1,0 +1,126 @@
+:root {
+    --primary: #2FBBC5;
+    --light: #cbe1c6;
+    --dark: #6da862;
+    --deep: #3c5c35;
+    --ashy: #3E959B;
+    --white: #fff;
+
+    --fs-h1: 5rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 2rem;
+    --fs-body: 1rem;
+
+    --fw-light: 300;
+    --fw-reg: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --font-primary: "Poppins", sans-serif;
+    --blog-font: "Mali", cursive;
+}
+
+@media screen and (max-width: 375px) {
+    :root {
+        --fs-h1: 2.5rem;
+        --fs-h2: 1.75rem;
+        --fs-h3: 1.5rem;
+    }
+
+    .blurb {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (min-width: 376px) and (max-width: 600px) {
+    :root {
+        --fs-h1: 3.3rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1.75rem;
+    }
+
+    .blurb {
+        width: 95% !important;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    font-family: var(--font-primary);
+    font-size: var(--fs-body);
+}
+
+footer {
+    background-color: var(--ashy);
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem 1rem;
+    line-height: 1rem;
+    color: #fff;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    color: var(--ashy);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+br {
+    line-height: 0.5rem;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+}
+
+#jumbotron {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.blurb {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.socials {
+    font-size: var(--fs-h2);
+}
